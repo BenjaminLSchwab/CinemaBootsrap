@@ -1,18 +1,225 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <title>Academy Cinemas</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!-- My CSS -->
+      <link rel="stylesheet" href="CSS/cinema-style.css">
+      
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <div class="container">
 
+<!--          NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="img/movie_logo.gif" width="60" height="58" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#showtimes1">Showtimes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+<!--          /NAVBAR-->
+          
+<!--          JUMBO-->
+        <div class="jumbotron jumbotron-fluid text-center bg-secondary">
+            <div class="container">
+                <h1 class="display-2">Academy Cinemas</h1>
+                <p class="lead">Sit back, relax, and enjoy the show.</p>
+            </div>
+        </div>
+<!--          /JUMBO-->
+          
+<!--        MAIN CONTENT-->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h3>About Academy Cinemas</h3>
+                    <img src="img/pdx.jpg" alt="PDX" class="img-fluid">
+                    <p>Located in the beautiful Pearl district.</p>
+                    <p>Our reels have been spinning since 12 A.D.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Accomidations</h3>
+                    <p>Our seats are so comfy you'll pass out.</p>
+                    <p>We wire up your brain and blast the sounds directly into your auditory nerve.</p>
+                    <p>Our climate control is ideal for humans.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Showtimes</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes1">Tron: Legacy</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes1">The Count of Monte Cristo</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes1">Fight Club</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes2">Apocolypse Now</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes2">3:10 to Yuma</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="#showtimes2">Moon</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+<!--        MAIN CONTENT-->
+          
+<!--        CARDS row 1 -->
+        <div class="card-group" id="showtimes1">
+            
+            <div class="card">
+                <img class="card-img-top" src="img/tron.jpg" alt="Tron Poster">
+                <div class="card-body">
+                <h5 class="card-title">Tron: Legacy</h5>
+                <p class="card-text">The son of a virtual world designer goes looking for his father and ends up inside the digital world that his father designed. He meets his father's corrupted creation and a unique ally who was born inside the digital world.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top" src="img/count.jpg" alt="The Count of Monte Cristo Poster">
+                <div class="card-body">
+                <h5 class="card-title">The Count of Monte Cristo</h5>
+                <p class="card-text">A young man, falsely imprisoned by his jealous "friend", escapes and uses a hidden treasure to exact his revenge.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top" src="img/fight.jpg" alt="Fight Club Poster">
+                <div class="card-body">
+                <h5 class="card-title">Fight Club</h5>
+                <p class="card-text">An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+        </div>
+<!--        /CARDS1 -->
+          
+<!--        CARDS row 2 -->
+        <div class="card-group" id="showtimes2">
+            
+            <div class="card">
+                <img class="card-img-top" src="img/Now.jpg" alt="Apocalypse Now Poster">
+                <div class="card-body">
+                <h5 class="card-title">Apocalypse Now</h5>
+                <p class="card-text">During the Vietnam War, Captain Willard is sent on a dangerous mission into Cambodia to assassinate a renegade Colonel who has set himself up as a god among a local tribe.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top" src="img/yuma.jpg" alt="3:10 to Yuma Poster">
+                <div class="card-body">
+                <h5 class="card-title">3:10 to Yuma</h5>
+                <p class="card-text">A small-time rancher agrees to hold a captured outlaw who's awaiting a train to go to court in Yuma. A battle of wills ensues as the outlaw tries to psych out the rancher.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top" src="img/moon.jpg" alt="Moon Poster">
+                <div class="card-body">
+                <h5 class="card-title">Moon</h5>
+                <p class="card-text">Astronaut Sam Bell has a quintessentially personal encounter toward the end of his three-year stint on the Moon, where he, working alongside his computer, GERTY, sends back to Earth parcels of a resource that has helped diminish our planet's power problems.</p>
+                    <span class="badge badge-pill badge-info">6:00</span>
+                    <span class="badge badge-pill badge-info">8:30</span>
+                    <span class="badge badge-pill badge-info">10:30</span>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            
+        </div>
+<!--        /CARDS2 -->
+          
+<!--         Form   -->
+        <div class="container py-4" id="deals">
+            <form>
+                <h3>Stay current on the movies!</h3>
+                <div class="form-group row">
+                    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                    <div class="col-sm-8">
+                    <input type="email" class="form-control form-control-md" id="colFormLabelMd" placeholder="name@place.com">
+                    </div>
+                    <div class="col-sm">
+                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+<!--        /Form   -->
+          
+<!--        FOOTER-->
+        <ul class="nav">
+            
+            <li class="nav-item">
+            <small><a class="nav-link" href="#">Movie Rewards</a></small>
+            </li>
+            
+            <li class="nav-item">
+            <small><a class="nav-link" href="#">Movies@news.org</a></small>
+            </li>
+            
+            <li class="nav-item">
+            <small><a class="nav-link" href="#">Info@AcademyCinemas.com</a></small>
+            </li>
+            
+            <li class="nav-item">
+            <small><a class="nav-link" href="#">&copy;12A.D. Academy Cinemas&reg;</a></small>
+            </li>
+            
+        </ul>
+<!--        /FOOTER-->     
+          
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
