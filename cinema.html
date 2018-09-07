@@ -13,11 +13,11 @@
       
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body id="home">
       <div class="container">
 
 <!--          NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
             <a class="navbar-brand" href="#">
                 <img src="img/movie_logo.gif" width="60" height="58" alt="Logo">
             </a>
@@ -29,11 +29,11 @@
                 <ul class="navbar-nav mr-auto">
                     
                     <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     </li>
                     
                     <li class="nav-item">
@@ -45,16 +45,21 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                
+                <div class="hide-when-small">
+                    <form class="form-inline my-2">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn  my-2 my-sm-0 btn-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+                
+
             </div>
         </nav>
 <!--          /NAVBAR-->
           
 <!--          JUMBO-->
-        <div class="jumbotron jumbotron-fluid text-center bg-secondary">
+        <div class="jumbotron jumbotron-fluid text-center bg-secondary hide-when-medium">
             <div class="container">
                 <h1 class="display-2">Academy Cinemas</h1>
                 <p class="lead">Sit back, relax, and enjoy the show.</p>
@@ -66,7 +71,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4" id="about">
                     <h3>About Academy Cinemas</h3>
                     <img src="img/pdx.jpg" alt="PDX" class="img-fluid">
                     <p>Located in the beautiful Pearl district.</p>
