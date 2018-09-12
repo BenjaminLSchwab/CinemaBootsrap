@@ -63,6 +63,10 @@
             <div class="container">
                 <h1 class="display-2">Academy Cinemas</h1>
                 <p class="lead">Sit back, relax, and enjoy the show.</p>
+            
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#RegisterModal">
+                    Free service!
+                </button> 
             </div>
         </div>
 <!--          /JUMBO-->
@@ -75,7 +79,7 @@
                     <h3>About Academy Cinemas</h3>
                     <img src="img/pdx.jpg" alt="PDX" class="img-fluid">
                     <p>Located in the beautiful Pearl district.</p>
-                    <p>Our reels have been spinning since 12 A.D.</p>
+                    <p>Our reels have been spinning since 1912</p>
                 </div>
 
                 <div class="col-md-4">
@@ -195,12 +199,43 @@
                     <input type="email" class="form-control form-control-md" id="colFormLabelMd" placeholder="name@place.com">
                     </div>
                     <div class="col-sm">
-                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                    <button type="button" class="popover-dismiss btn btn-outline-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Gimme dat email.">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
 <!--        /Form   -->
+          
+    <!-- Modal -->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Register to recieve survailance.</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone you know.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Encrypt my private info</label>
+                      </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
           
 <!--        FOOTER-->
         <ul class="nav">
@@ -222,7 +257,7 @@
             </li>
             
         </ul>
-<!--        /FOOTER-->     
+<!--        /FOOTER--> 
           
       </div>
     <!-- Optional JavaScript -->
@@ -230,5 +265,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })  
+    </script>  
+      
+    </body>
 </html>
